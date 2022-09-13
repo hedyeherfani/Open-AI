@@ -19,8 +19,8 @@ def openAI(query):
          if len(response['choices']) > 0:
              answer = response['choices'][0]['text']
          else:
-             answer = 'oops'
+             answer = 'Oh no. We seem to have hit a snag.'
     else:
-      answer = 'oops'
+      answer = 'Oh no. We seem to have hit a snag.'
 
     return answer
