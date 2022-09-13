@@ -1,0 +1,80 @@
+{% extends 'includes/layout.html' %}
+
+
+
+
+{% block body %}
+<main class="container">
+  <div class="bg-light p-5 rounded mt-5">
+    <h1>Project creator with OpenAI GPT-3</h1>
+    <p class="lead">This site helps you go from A-Z with your crochet project.
+    </p>
+    <p class="lead">You can use this to get AI suggestions as you move through your crochet hobby or business. </p>
+  </div>
+
+
+  <div class="p-5 rounded mt-1">
+    <div class="row">
+
+
+      <div class="col-lg-3 mb-3">
+        <div class="card">
+          <div class="card-header">
+            Material Suggestions
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">  Generate Material Suggestions  ️</h5>
+            <p class="card-text">Generate suggestions on what hook and yarn to use for your project.</p>
+            <a href="/material-suggestions" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 mb-3">
+        <div class="card">
+          <div class="card-header">
+            Project Suggestions
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">  Generate Project Suggestions </h5>
+            <p class="card-text"> Need some inspiration for what to crochet next? Generate 3 suggestions for what to crochet next </p>
+            <a href="/project-suggestions" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 mb-3">
+        <div class="card">
+          <div class="card-header">
+            Pattern Creator
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"> Generate A Pattern For Your Project  </h5>
+            <p class="card-text"> Want to create your item but don't know how to? Generate a pattern for whichever project you are working on next. </p>
+            <a href="/pattern-creator" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 mb-3">
+        <div class="card">
+          <div class="card-header">
+            Price Suggestion
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"> Generate A Suggested Price To Sell Your Project (USD) </h5>
+            <p class="card-text"> Ready to sell your completed project? Generate an estimate now. </p>
+            <a href="/price-suggestion" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</main>
+{% endblock %}

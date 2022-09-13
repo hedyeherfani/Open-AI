@@ -1,0 +1,39 @@
+{% extends 'includes/layout.html' %}
+
+
+
+{% block body %}
+<main class="container">
+  <div class="bg-light p-5 rounded mt-5">
+    <h1>  Generate a price suggestion ️</h1>
+    <p class="lead">
+      Do you need a rough estimate for pricing your completed project?
+    </p>
+
+    <h2>Enter some information regarding what the completed project is</h2>
+
+    <form class="" action="/price-suggestion" method="post">
+
+      <div class="mb-3">
+        <label class="form-label">Price Suggestion</label>
+        <input type="text" class="form-control" name="priceSuggestion" placeholder="eg. A thin blanket">
+        <div class="form-text">Input some information about what the completed project is.</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg"> GET RECOMMENDATIONS</button>
+
+    </form>
+  </div>
+
+
+  <div class="p-3 rounded">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-primary">{{prompt}}</h3>
+        <p class="lead">{{openAIAnswer}}</p>
+
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
