@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import config
 import os
 import sys
-sys.path.append("/Users/hedyeherfani/github/Open-AI")
+sys.path.append("INSERT_PATH_NAME")
 import content
 
 
